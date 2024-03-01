@@ -1,6 +1,103 @@
 .home_page {
+  width: 100%;
+  min-height: 660px;
+  background-color: #121212;
+  padding-top: 25px;
+}
+
+.system_header {
+  font-family: Inter;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 97px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 0;
+  color: rgba(255, 255, 255, 1);
+}
+
+.system_header::first-letter {
+  background: linear-gradient(95.57deg, #0098db 0%, #00a85a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.system_text {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  padding: 0;
+}
+
+.suitable_wrapper {
+  height: 112px;
+  border: 5px solid #01a19a !important;
+  background-image: linear-gradient(95.57deg, #0098db 0%, #00a85a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
+.suitable_card_dsc {
+  text-transform: uppercase;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.suitable_card_first {
+  height: 193px;
+  background: rgba(242, 242, 242, 1);
+  margin-right: 20px;
+}
+
+.suitable_card_second {
+  height: 193px;
+  background: rgba(137, 240, 247, 1);
+}
+
+.suitable_card_third {
+  background: rgba(233, 113, 7, 1);
+  height: 213px;
+}
+
+.suitable_card_fourth {
+  position: relative;
+  height: 236px;
+  background-image: url(/public/suitableImages/f514da8890201d6a8b7f5b40eab24f04.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: white !important;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    min-height: 600px;
-    background-color: rgba(0, 0, 0, 1);
-    padding-top: 32px;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+  }
+}
+
+.suitable_card_fourth h4 {
+  background: unset;
+  color: rgba(255, 255, 255, 1);
 }

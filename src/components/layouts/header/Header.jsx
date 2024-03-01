@@ -8,7 +8,7 @@ const Header = () => (
           <img
             src="/QS logo 6 1.png"
             width=""
-            height="50"
+            height="53"
             className="d-inline-block align-top"
             alt="Q Solutions logo"
           />
