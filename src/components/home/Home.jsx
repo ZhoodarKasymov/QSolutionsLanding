@@ -1,8 +1,10 @@
 import { Col, Container, Row } from "react-bootstrap";
 import "./Home.css";
 import "@fontsource/inter/800.css";
+import "@fontsource/inter/700.css";
 import Button from "../common/button/Button";
 import VerticalCarousel from "../common/verticalCarousel/VerticalCarousel";
+import TitleSection from "../common/title/TitleSection";
 
 const Home = () => {
   return (
@@ -103,7 +105,7 @@ const Home = () => {
             <Col lg={6} className="p-1">
               <Row className="p-0 m-0">
                 <Col lg={12} className="p-0">
-                  <div className="suitable_card_fourth suitable_card_dsc">
+                  <div className="suitable_card_fourth suitable_card_dsc mb-3 ">
                     <h4>больницы медицинские учреждения</h4>
                     <h4>ОБЩЕСТВЕННЫЕ ПРИЁМНЫЕ</h4>
                     <h4>офисы управляющих компаний жкх</h4>
@@ -128,6 +130,18 @@ const Home = () => {
           </Row>
         </Container>
       </div>
+      <div className="mt-5 mb-5 row">
+        <div className="line_q col-6"></div>
+        <div className="line_q_2 col-6"></div>
+      </div>
+      <Container>
+        <Row>
+          <Col lg={12}>
+            <TitleSection title="из чего состоит сэо" />
+          </Col>
+          
+        </Row>
+      </Container>
     </>
   );
 };
