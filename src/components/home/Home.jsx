@@ -5,6 +5,7 @@ import "@fontsource/inter/700.css";
 import Button from "../common/button/Button";
 import VerticalCarousel from "../common/verticalCarousel/VerticalCarousel";
 import TitleSection from "../common/title/TitleSection";
+import Card from "./../common/card/Card";
 
 const Home = () => {
   return (
@@ -130,16 +131,137 @@ const Home = () => {
           </Row>
         </Container>
       </div>
-      <div className="mt-5 mb-5 row">
+      <div className="mt-5 mb-5 row w-100">
         <div className="line_q col-6"></div>
         <div className="line_q_2 col-6"></div>
       </div>
-      <Container>
+      <Container className="mb-5">
         <Row>
-          <Col lg={12}>
+          <Col lg={12} className="mb-5">
             <TitleSection title="из чего состоит сэо" />
           </Col>
-          
+          <Col lg={3}>
+            <Card
+              folderPath={"seoImages"}
+              path={"9674e5e875580555facffd0b45d62034.png"}
+              title={"Терминал"}
+              link={"https://google.com"}
+              key={1}
+              height={200}
+            ></Card>
+          </Col>
+          <Col lg={3}>
+            <Card
+              folderPath={"seoImages"}
+              path={"d72aa7b2ca645451f4b5d5b637d6c8d9.png"}
+              title={"Табло оператора"}
+              link={"https://google.com"}
+              key={1}
+              height={200}
+            ></Card>
+          </Col>
+          <Col lg={3}>
+            <Card
+              folderPath={"seoImages"}
+              path={"e940b93e9cf936285989bb1d5be82836.png"}
+              title={"ПО оператора"}
+              link={"https://google.com"}
+              key={1}
+              height={200}
+            ></Card>
+          </Col>
+          <Col lg={3}>
+            <Card
+              folderPath={"seoImages"}
+              path={"3658e92e53db6fcd0bb41c42f305ff79.png"}
+              title={"Главное табло (ТВ)"}
+              link={"https://google.com"}
+              key={1}
+              height={200}
+            ></Card>
+          </Col>
+          <Col lg={6} className="mt-4">
+            <Card
+              folderPath={"seoImages"}
+              path={"ea75e9ddd7d57f4cf8aed048ef831084.png"}
+              title={""}
+              link={"https://google.com"}
+              key={1}
+              height={255}
+            ></Card>
+          </Col>
+        </Row>
+      </Container>
+      <Container className="mb-5">
+        <Row>
+          <Col lg={12} className="mb-5">
+            <TitleSection title="Партнеры" />
+          </Col>
+          <Col lg={12}>
+            <Row>
+              <Col className="col-1-5">
+                <img
+                  src={`${process.env.PUBLIC_URL}/partnersImages/01d8b98a0c1ab6422feddeecab72a2e0.png`}
+                  className="d-block"
+                  width={150}
+                />
+              </Col>
+              <Col className="col-1-5 position-relative">
+                <img
+                  src={`${process.env.PUBLIC_URL}/partnersImages/902e6c84827e8a283945b37c34c47f81.png`}
+                  className="d-block"
+                  width={150}
+                />
+              </Col>
+              <Col className="col-1-5 position-relative">
+                <img
+                  src={`${process.env.PUBLIC_URL}/partnersImages/3469b2094521a5a7fbe89921c3d9c326.png`}
+                  className="d-block"
+                  width={150}
+                />
+              </Col>
+              <Col className="col-1-5 position-relative">
+                <img
+                  src={`${process.env.PUBLIC_URL}/partnersImages/3953b8253d7da393b922beaa08eab0c8.png`}
+                  className="d-block"
+                  width={80}
+                  style={{ position: "absolute", right: "7px", top: '-16px', zIndex: '1' }}
+                />
+              </Col>
+              <Col className="col-1-5 position-relative">
+                <img
+                  src={`${process.env.PUBLIC_URL}/partnersImages/dbbc20db5986aa9062f84fac3d4c6691.png`}
+                  className="d-block"
+                  width={260}
+                  style={{ position: "absolute", right: "-79px", top: '-22px' }}
+                />
+              </Col>
+              <Col className="col-1-5 position-relative">
+                <img
+                  src={`${process.env.PUBLIC_URL}/partnersImages/df02a0837f32088983f02db0b111572c.png`}
+                  className="d-block"
+                  width={80}
+                  style={{ position: "absolute", right: "28px", top:'-19' }}
+                />
+              </Col>
+              <Col className="col-1-5 position-relative">
+                <img
+                  src={`${process.env.PUBLIC_URL}/partnersImages/4cf0cdcd98bc443905801b1fb622be03.png`}
+                  className="d-block"
+                  width={80}
+                  style={{ position: "absolute", left: "44px", zIndex: "1", top: '-18px' }}
+                />
+              </Col>
+              <Col className="col-1-5 position-relative">
+                <img
+                  src={`${process.env.PUBLIC_URL}/partnersImages/8dc208050e4d04efaf21472480bc8b28.png`}
+                  className="d-block"
+                  width={250}
+                  style={{ position: "absolute", left: "-36px", top: "-25px" }}
+                />
+              </Col>
+            </Row>
+          </Col>
         </Row>
       </Container>
     </>
